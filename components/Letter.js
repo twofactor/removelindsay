@@ -84,17 +84,18 @@ export default function Letter({ name }) {
           borderRadius="8px"
           backgroundColor="white"
           width="100%"
-          flexDirection="row"
+          flexDirection={["column", "column", "row", "row"]}
           mb="12px"
         >
           <Text fontWeight="bold" padding="8px" paddingLeft="16px">
             To:
           </Text>
           <Textarea
-            paddingLeft="2px"
+            paddingLeft={["12px", "12px", "2px", "2px"]}
             borderRadius="8px"
             borderWidth="0px"
             resize="none"
+            minHeight={["100px", "80px", "80px", "80px"]}
             value={emailAddresses}
           ></Textarea>
           <Button
@@ -113,18 +114,18 @@ export default function Letter({ name }) {
           borderRadius="8px"
           backgroundColor="white"
           width="100%"
-          flexDirection="row"
+          flexDirection={["column", "column", "row", "row"]}
           mb="12px"
         >
           <Text fontWeight="bold" padding="8px" paddingLeft="16px">
             Subject:
           </Text>
           <Textarea
-            paddingLeft="2px"
+            paddingLeft={["12px", "12px", "2px", "2px"]}
             borderRadius="8px"
             borderWidth="0px"
             resize="none"
-            minHeight="62px"
+            minHeight={["80px", "80px", "62px", "62px"]}
             value={subject}
           ></Textarea>
           <Button
@@ -143,7 +144,7 @@ export default function Letter({ name }) {
           borderRadius="8px"
           backgroundColor="white"
           width="100%"
-          flexDirection="row"
+          flexDirection={["column", "column", "row", "row"]}
           mb="12px"
         >
           <Textarea
@@ -151,7 +152,7 @@ export default function Letter({ name }) {
             resize="none"
             borderWidth="0px"
             borderRadius="8px"
-            minHeight="120px"
+            minHeight={["240px", "200px", "160px", "140px"]}
           />
           <Button
             size="xs"
@@ -165,7 +166,7 @@ export default function Letter({ name }) {
             Copy Letter
           </Button>
         </Flex>
-        <Flex width="100%" flexDirection="row">
+        <Flex width="100%" flexDirection={["column", "column", "row", "row"]}>
           <Link
             width="100%"
             target="_blank"
@@ -176,7 +177,8 @@ export default function Letter({ name }) {
               variantColor="red"
               borderRadius="8px"
               width="100%"
-              mr="8px"
+              mr={["0px", "0px", "8px", "8px"]}
+              mb="8px"
             >
               Send With Gmail
             </Button>
@@ -191,7 +193,7 @@ export default function Letter({ name }) {
               variantColor="blue"
               borderRadius="8px"
               width="100%"
-              ml="8px"
+              ml={["0px", "0px", "8px", "8px"]}
             >
               Send With Mail App
             </Button>

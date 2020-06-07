@@ -204,7 +204,7 @@ export default function Letter({ name }) {
           <Link
             width="100%"
             target="_blank"
-            href={buildMailTo(emailsSemiColon, letter, subject)}
+            href={buildMailTo(emailsComma, letter, subject)}
           >
             <Button
               fontWeight="bold"

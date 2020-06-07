@@ -45,10 +45,12 @@ export default function Home() {
             content="Help us hold this public official accountable and email the Garden
             Grove's leadership using this tool."
           />
+
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"
           />
+          <meta property="og:image" content="/gg.jpg" />
           <meta property="og:url" content="https://removelindsay.now.sh" />
           <meta name="twitter:card" content="summary" />
           <meta

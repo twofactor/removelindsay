@@ -12,6 +12,7 @@ import {
   useColorMode,
 } from "@chakra-ui/core";
 import { motion } from "framer-motion";
+import countapi from "countapi-js";
 
 import Container from "../components/ui/Container";
 import CenteredColumn from "../components/ui/CenteredColumn";
@@ -23,6 +24,12 @@ export default function Home() {
   const [name, setName] = useState("");
   const [finalName, setFinalName] = useState("");
   const { colorMode, toggleColorMode } = useColorMode();
+
+  useEffect(() => {
+    countapi.visits("REMOVELINDSAY").then((result) => {
+      console.log(result.value);
+    });
+  }, []);
 
   const handleChange = (event) => setName(event.target.value);
   const handleSubmit = (event) => {
@@ -99,6 +106,7 @@ export default function Home() {
               <motion.div
                 initial={{ opacity: 0, scale: 0.8, y: 100 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.8, y: 100 }}
               >
                 <Letter key="letter" name={finalName} />
               </motion.div>

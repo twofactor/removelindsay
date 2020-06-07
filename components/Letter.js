@@ -27,7 +27,7 @@ const emailsComma =
 const emailsSemiColon =
   "stevej@ggcity.org;georgeb@ggcity.org;joneill@ggcity.org;thuhan@ggcity.org;phatb@ggcity.org;stephaniek@ggcity.org;kimn@ggcity.org;cityclerk@ggcity.org";
 const subjectLine =
-  "Re: Behavior Unbecoming of a Public Official from City Planning Commissioner, Josh Lindsay of District 1 ";
+  "Public Comment Re: Behavior Unbecoming of a Public Official from City Planning Commissioner, Josh Lindsay of District 1 ";
 
 export default function Letter({ name }) {
   //hooks

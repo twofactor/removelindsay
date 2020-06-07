@@ -50,7 +50,7 @@ export default function Home() {
             name="viewport"
             content="initial-scale=1.0, width=device-width"
           />
-          <meta property="og:image" content="/gg.jpg" />
+          <meta property="og:image" content="/ggnew.jpg" />
           <meta property="og:url" content="https://removelindsay.now.sh" />
           <meta name="twitter:card" content="summary" />
           <meta

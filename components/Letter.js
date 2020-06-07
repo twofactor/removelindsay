@@ -79,6 +79,20 @@ export default function Letter({ name }) {
 
   return (
     <>
+      <Text mb="12px">
+        We've provided a letter for you that you can use as a starting point in
+        your email to Garden Grove city coucil.
+      </Text>
+      <Text mb="12px">
+        You can copy and paste it into your own email client, or you can click
+        on the buttons below to open either Gmail or your default email client
+        with the letter magically pre-filled. If you'd like to edit the email
+        further, you can edit it in your email client.
+      </Text>
+      <Text fontWeight="bold" mb="12px">
+        Clicking the button won't send the email, you still have to click send
+        in gmail/your email client yourself.
+      </Text>
       <Box borderRadius="8px" padding="12px" backgroundColor="gray.100">
         <Flex
           borderRadius="8px"
@@ -166,7 +180,11 @@ export default function Letter({ name }) {
             Copy Letter
           </Button>
         </Flex>
-        <Flex width="100%" flexDirection={["column", "column", "row", "row"]}>
+        <Flex
+          width="100%"
+          pr={["0px", "0px", "8px", "8px"]}
+          flexDirection={["column", "column", "row", "row"]}
+        >
           <Link
             width="100%"
             target="_blank"

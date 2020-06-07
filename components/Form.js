@@ -26,7 +26,11 @@ export default function Form({ name, handleChange, handleSubmit }) {
               mr={["0px", "0px", "8px", "8px"]}
               mb={["8px", "8px", "0px", "0px"]}
             />
-            <Button variantColor="blue" onClick={handleSubmit}>
+            <Button
+              fontWeight="bold"
+              variantColor="blue"
+              onClick={handleSubmit}
+            >
               Let's Go
             </Button>
           </Flex>

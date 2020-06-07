@@ -35,7 +35,7 @@ export default function Home() {
     <div className="container">
       <Container>
         <Head>
-          <title>Remove Comissioner Lindsay</title>
+          <title>Remove Commissioner Lindsay</title>
           <meta
             property="og:title"
             content="Email Petition To Remove Commissioner Lindsay"
